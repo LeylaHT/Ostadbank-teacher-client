@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">OstadBankTeacherApp</string>
+    <string name="app_name">استادبانک</string>
+    <string name="online_tutor_select">انتخاب آنلاین معلم خصوصی</string>
+    <string name="DayAgo_Title">" روز قبل"</string>
+    <string name="HoursAgo_Title">" ساعت قبل"</string>
+    <string name="MinutesAgo_Title">" دقیقه قبل"</string>
+    <string name="SecondAgo_Title">" ثانیه قبل"</string>
+    <string name="cafe_bazaar">کافه بازار</string>
+
+    <string name="credit">اعتبار</string>
+    <string name="status">وضعیت</string>
+    <string name="rate">امتیاز</string>
+    <string name="no_time">وقت برای تدریس ندارم</string>
+
+    <string name="new_request">درخواست جدید</string>
+    <string name="registered_sessions">جلسات ثبت شده</string>
+    <string name="new_session">ثبت جلسه جدید</string>
+    <string name="session_handling">مدیریت جلسات</string>
+    <string name="support_tick">تیکت پشتیبانی</string>
+
 </resources>

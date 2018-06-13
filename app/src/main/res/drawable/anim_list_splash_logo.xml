@@ -1,0 +1,31 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/img_splash_item1" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item2" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item3" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item4" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item5" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item6" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item7" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item8" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item9" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item10" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item11" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item12" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item13" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item14" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item15" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item16" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item17" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item18" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item19" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item20" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item21" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item22" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item23" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item24" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item25" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item26" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item27" android:duration="50" />
+    <item android:drawable="@drawable/img_splash_item28" android:duration="5000" />
+</animation-list>

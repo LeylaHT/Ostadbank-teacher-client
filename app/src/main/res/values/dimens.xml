@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="font_size_mini_small">8sp</dimen>
+<dimen name="font_size_xmini_small">9sp</dimen>
+<dimen name="font_size_small">10sp</dimen>
+<dimen name="font_size_xsmall">12sp</dimen>
+<dimen name="font_size_xxsmall">13sp</dimen>
+<dimen name="font_size_medium">14sp</dimen>
+<dimen name="font_size_xmedium">15sp</dimen>
+<dimen name="font_size_xxmedium">16sp</dimen>
+<dimen name="font_size_large">18sp</dimen>
+<dimen name="font_size_xlarge">19sp</dimen>
+</resources>

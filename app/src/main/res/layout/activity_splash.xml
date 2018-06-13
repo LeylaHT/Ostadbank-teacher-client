@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="26dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_splash_item1" />
+
+    <TextView
+        android:id="@+id/tv_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/online_tutor_select"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <!--<include layout="@layout/loading_view" />-->
+
+    <TextView
+        android:id="@+id/tv_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="www.ostadbank.com"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_size_medium" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/tv_web"
+        app:srcCompat="@drawable/ic_copy_right" />
+
+</RelativeLayout>
