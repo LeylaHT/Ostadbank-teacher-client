@@ -1,22 +1,23 @@
 package ostadbank.com.ui.ui.activity;
 
 import android.os.Bundle;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import ostadbank.com.Application.OstadBankApplication;
 import ostadbank.com.R;
 
+import static ostadbank.com.Application.OstadBankApplication.getBaseFont;
+
 public class MainActivity extends AppCompatActivity {
-    TextView tvCredit, tvCreditLabel, tvStatus, tvStatusLabel, tvRate, tvRateLabel,tvNoTime;
+    TextView tvCredit, tvCreditLabel, tvStatus, tvStatusLabel, tvRate, tvRateLabel, tvNoTime;
+    TextView tvNewRequest, tvRegisteredSessions, tvRegisterNewSession, tvSessionHandling, tvSupportTicket;
     com.suke.widget.SwitchButton sbNoTime;
     ImageView ivMenu;
     DrawerLayout mDrawerLayout;
-
 
 
     @Override
@@ -59,20 +60,31 @@ public class MainActivity extends AppCompatActivity {
         tvStatusLabel = (TextView) findViewById(R.id.tv_status_label);
         tvRate = (TextView) findViewById(R.id.tv_rate);
         tvRateLabel = (TextView) findViewById(R.id.tv_rate_label);
-        tvNoTime=(TextView)findViewById(R.id.tv_no_time);
+        tvNoTime = (TextView) findViewById(R.id.tv_no_time);
         sbNoTime = (com.suke.widget.SwitchButton)
                 findViewById(R.id.sb_no_time);
-        ivMenu=(ImageView)findViewById(R.id.iv_menu);
-        mDrawerLayout= findViewById(R.id.drwer_layout);
+        ivMenu = (ImageView) findViewById(R.id.iv_menu);
+        mDrawerLayout = findViewById(R.id.drwer_layout);
+        tvNewRequest = findViewById(R.id.tv_new_request);
+        tvRegisteredSessions = findViewById(R.id.tv_registered_sessions);
+        tvRegisterNewSession = findViewById(R.id.tv_registering_new_session);
+        tvSessionHandling = findViewById(R.id.tv_session_hadling);
+        tvSupportTicket = findViewById(R.id.tv_support_ticket);
 
 
-        tvCredit.setTypeface(OstadBankApplication.getBaseFont());
-        tvCreditLabel.setTypeface(OstadBankApplication.getBaseFont());
-        tvStatus.setTypeface(OstadBankApplication.getBaseFont());
-        tvStatusLabel.setTypeface(OstadBankApplication.getBaseFont());
-        tvRate.setTypeface(OstadBankApplication.getBaseFont());
-        tvRateLabel.setTypeface(OstadBankApplication.getBaseFont());
-        tvNoTime.setTypeface(OstadBankApplication.getBaseFont());
+        tvCredit.setTypeface(getBaseFont());
+        tvCreditLabel.setTypeface(getBaseFont());
+        tvStatus.setTypeface(getBaseFont());
+        tvStatusLabel.setTypeface(getBaseFont());
+        tvRate.setTypeface(getBaseFont());
+        tvRateLabel.setTypeface(getBaseFont());
+        tvNoTime.setTypeface(getBaseFont());
+
+        tvNewRequest.setTypeface(getBaseFont());
+        tvRegisteredSessions.setTypeface(getBaseFont());
+        tvRegisterNewSession.setTypeface(getBaseFont());
+        tvSessionHandling.setTypeface(getBaseFont());
+        tvSupportTicket.setTypeface(getBaseFont());
 
 
     }
@@ -80,11 +92,18 @@ public class MainActivity extends AppCompatActivity {
     private void fillData() {
 
     }
-    private void initListener(){
+
+    private void initListener() {
         ivMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mDrawerLayout.openDrawer(GravityCompat.START);
+
+                if (mDrawerLayout.isDrawerVisible(Gravity.RIGHT)) {
+                    mDrawerLayout.closeDrawer(Gravity.RIGHT);
+                } else {
+                    mDrawerLayout.openDrawer(Gravity.RIGHT);
+                }
+
 
             }
         });

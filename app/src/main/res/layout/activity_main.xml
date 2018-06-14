@@ -1,336 +1,351 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drwer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/md_grey_100"
     android:fitsSystemWindows="true"
-    tools:context=".ui.ui.activity.MainActivity">
+    tools:context=".ui.ui.activity.MainActivity"
+    tools:openDrawer="right">
+
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical">
 
-  <include layout="@layout/layout_toolbar"/>
+            <include layout="@layout/layout_toolbar" />
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:cardUseCompatPadding="true"
-        app:contentPadding="-4dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#c0c0c0"
-            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:background="@drawable/border"
-                android:padding="10dp">
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#c0c0c0"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/tv_rate_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="6dp"
-                    android:text="@string/rate"
-                    android:textColor="#242e4f"
-                    android:textSize="@dimen/font_size_small" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/background_transparent_clickable"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="6dp">
 
-                <TextView
-                    android:id="@+id/tv_rate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="300"
-                    android:textColor="#242e4f"
-                    android:textSize="@dimen/font_size_small" />
+                    <TextView
+                        android:id="@+id/tv_rate_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="@string/rate"
+                        android:textColor="#242e4f"
+                        android:textSize="@dimen/font_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300"
+                        android:textColor="#242e4f"
+                        android:textSize="@dimen/font_size_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/background_transparent_clickable"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/tv_status_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="@string/status"
+                        android:textColor="#242e4f"
+                        android:textSize="@dimen/font_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="فعال"
+                        android:textColor="#242e4f"
+                        android:textSize="@dimen/font_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/background_transparent_clickable"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/tv_credit_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:text="@string/credit"
+                        android:textColor="#242e4f"
+                        android:textSize="@dimen/font_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40,000"
+                        android:textColor="#242e4f"
+                        android:textSize="@dimen/font_size_small" />
+                </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:background="@drawable/border"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/tv_status_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="6dp"
-                    android:text="@string/status"
-                    android:textColor="#242e4f"
-                    android:textSize="@dimen/font_size_small" />
-
-                <TextView
-                    android:id="@+id/tv_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="فعال"
-                    android:textColor="#242e4f"
-                    android:textSize="@dimen/font_size_small" />
-            </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F41515"
                 android:gravity="center"
-                android:orientation="vertical"
-                android:background="@drawable/border"
                 android:padding="10dp">
 
-                <TextView
-                    android:id="@+id/tv_credit_label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="6dp"
-                    android:text="@string/credit"
-                    android:textColor="#242e4f"
-                    android:textSize="@dimen/font_size_small" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_no_time"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="25dp"
+                    app:sb_button_color="@color/md_grey_500" />
+
 
                 <TextView
-                    android:id="@+id/tv_credit"
+                    android:id="@+id/tv_no_time"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="40,000"
-                    android:textColor="#242e4f"
-                    android:textSize="@dimen/font_size_small" />
+                    android:layout_height="30dp"
+                    android:layout_alignRight="@+id/iv_clock"
+                    android:gravity="center"
+                    android:text="@string/no_time"
+                    android:textColor="@color/md_white"
+                    android:textSize="@dimen/font_size_xsmall" />
+
+                <ImageView
+                    android:id="@+id/iv_clock"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="40dp"
+                    app:srcCompat="@drawable/ic_clock" />
+
+
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_grey_700" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nsv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#ebeaea"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="-2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_transparent_clickable">
+
+
+                            <TextView
+                                android:id="@+id/tv_new_request"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/new_request"
+                                android:textColor="@color/md_grey_800" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50dp"
+                                app:srcCompat="@drawable/ic_download" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#ebeaea"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="-2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_transparent_clickable">
+
+                            <TextView
+                                android:id="@+id/tv_registered_sessions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/registered_sessions"
+                                android:textColor="#2f364c" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50dp"
+                                app:srcCompat="@drawable/ic_download" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#ebeaea"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="-2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_transparent_clickable">
+
+                            <TextView
+                                android:id="@+id/tv_registering_new_session"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/new_session"
+                                android:textColor="#2f364c" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50dp"
+                                app:srcCompat="@drawable/ic_download" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#ebeaea"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="-2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_transparent_clickable">
+
+                            <TextView
+                                android:id="@+id/tv_session_hadling"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/session_handling"
+                                android:textColor="#2f364c" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50dp"
+                                app:srcCompat="@drawable/ic_download" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        app:cardBackgroundColor="#ebeaea"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="-2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_transparent_clickable">
+
+                            <TextView
+                                android:id="@+id/tv_support_ticket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/support_tick"
+                                android:textColor="#2f364c" />
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50dp"
+                                app:srcCompat="@drawable/ic_download" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#F41515"
-        android:gravity="center"
-        android:padding="10dp">
-
-
-        <com.suke.widget.SwitchButton
-            android:id="@+id/sb_no_time"
-            android:layout_width="60dp"
-            android:layout_marginRight="25dp"
-            android:layout_gravity="center_vertical"
-            app:sb_button_color="@color/md_grey_500"
-            android:layout_height="30dp" />
-
-
-        <TextView
-            android:id="@+id/tv_no_time"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_alignRight="@+id/iv_clock"
-            android:gravity="center"
-            android:text="@string/no_time"
-            android:textColor="@color/md_white"
-            android:textSize="@dimen/font_size_xsmall" />
-
-        <ImageView
-            android:id="@+id/iv_clock"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_margin="10dp"
-            android:layout_marginRight="40dp"
-            app:srcCompat="@drawable/ic_clock" />
-
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/md_grey_700" />
-
-    <android.support.v4.widget.NestedScrollView
-        android:id="@+id/nsv_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clipChildren="false">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                app:cardUseCompatPadding="true"
-                app:contentPadding="-2dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ebeaea"
-                   >
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/new_request"
-                        android:layout_centerInParent="true"
-                        android:textColor="@color/md_grey_800" />
-
-                    <android.support.v7.widget.AppCompatImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:srcCompat="@drawable/ic_download"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="50dp"/>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                app:cardUseCompatPadding="true"
-                app:contentPadding="-2dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ebeaea"
-                  >
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/registered_sessions"
-                        android:textColor="#2f364c"
-                        android:layout_centerInParent="true"/>
-                    <android.support.v7.widget.AppCompatImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:srcCompat="@drawable/ic_download"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="50dp"/>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                app:cardUseCompatPadding="true"
-                app:contentPadding="-2dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ebeaea">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/new_session"
-                        android:textColor="#2f364c"
-                        android:layout_centerInParent="true"/>
-                    <android.support.v7.widget.AppCompatImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:srcCompat="@drawable/ic_download"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="50dp"/>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                app:cardUseCompatPadding="true"
-                app:contentPadding="-2dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ebeaea">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/session_handling"
-                        android:textColor="@color/md_grey_800"
-                        android:layout_centerInParent="true"/>
-                    <android.support.v7.widget.AppCompatImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:srcCompat="@drawable/ic_download"
-                        android:layout_marginRight="50dp"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"/>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_margin="10dp"
-                app:cardUseCompatPadding="true"
-                app:contentPadding="-2dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#ebeaea">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/support_tick"
-                        android:layout_centerInParent="true"
-                        android:textColor="@color/md_grey_800" />
-                    <android.support.v7.widget.AppCompatImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        app:srcCompat="@drawable/ic_download"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="50dp"/>
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-    </android.support.v4.widget.NestedScrollView>
-        </LinearLayout>
- </FrameLayout>
+    </FrameLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
+        android:layout_gravity="end"
         android:fitsSystemWindows="true"
-        app:menu="@menu/drawer_view"
-        app:headerLayout="@layout/nav_header"/>
+        android:layoutDirection="rtl"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view" />
 
 
 </android.support.v4.widget.DrawerLayout>
+

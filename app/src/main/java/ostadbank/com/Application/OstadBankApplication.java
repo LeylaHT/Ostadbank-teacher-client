@@ -3,6 +3,7 @@ package ostadbank.com.Application;
 import android.app.Application;
 import android.content.Context;
 import android.graphics.Typeface;
+import android.support.v7.app.AppCompatDelegate;
 
 import java.util.Locale;
 
@@ -22,7 +23,7 @@ public class OstadBankApplication extends Application {
 
         // in bekhatere ine ke betone vectorha ro bekhone
         //dar android 4 be payin vector khonde nemishe
-        //AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         //UserPrefrences.init(getApplicationContext());
         initTypefaces(getApplicationContext());
 
@@ -81,6 +82,10 @@ public class OstadBankApplication extends Application {
 
         return IRANIAN_SANS_FONT;
     }
+
+
+
+
 
 
 
